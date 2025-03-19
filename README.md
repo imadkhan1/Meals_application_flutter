@@ -1,16 +1,70 @@
-# meals_app
+# Meals App
 
-A new Flutter project.
+A **Flutter** application that allows users to browse, filter, and view details of various meals. The app demonstrates efficient navigation, state management, and dynamic filtering.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- **Categories Screen**: Displays a grid of meal categories.
+- **Meals List**: Shows a list of meals for a selected category.
+- **Meal Details**: Provides detailed information about a selected meal, including ingredients and preparation steps.
+- **Filters**: Enables users to filter meals based on dietary preferences (e.g., gluten-free, lactose-free, vegetarian, vegan).
+- **Favorites**: Users can mark meals as favorites and view them in a dedicated tab.
+- **Smooth Navigation**: Implements seamless screen transitions using named routes.
+- **State Management**: Uses Flutter's provider package to manage app-wide state effectively.
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Categories Screen**: Displays all available meal categories.
+2. **Category Meals Screen**: Shows meals for a selected category.
+3. **Meal Detail Screen**: Displays detailed information about a selected meal.
+4. **Filters Screen**: Allows users to set dietary preferences.
+5. **Tabs Screen**: Provides navigation between categories and favorites.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🏗️ Project Structure
+
+```
+meals_app/
+│-- lib/
+│   ├── models/          # Data models for meals and categories
+│   ├── screens/         # UI screens for different app functionalities
+│   ├── widgets/         # Reusable UI components
+│   ├── data/            # Static meal and category data
+│   ├── providers/       # State management using Provider
+│   ├── main.dart        # Entry point of the application
+│
+│-- assets/
+│   ├── images/          # Image assets for meal categories
+│
+│-- pubspec.yaml         # Dependencies and asset configurations
+```
+
+## 🛠️ Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/meals_app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd meals_app
+   ```
+3. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the app:
+   ```sh
+   flutter run
+   ```
+
+## 📌 Dependencies
+
+- Flutter SDK
+- Provider (for state management)
+- Google Fonts (for custom typography)
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
