@@ -42,11 +42,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
     super.didChangeDependencies();
   }
 
-  void _removeMeal(String mealId) {
-    setState(() {
-      categoryMeals.removeWhere((meals) => meals.id == mealId);
-    });
-  }
 
   // final String categoryId;
   @override
@@ -66,7 +61,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             duration: categoryMeals[index].duration,
             complexity: categoryMeals[index].complexity,
             affordability: categoryMeals[index].affordability,
-            removeItem: _removeMeal,
           );
         },
         itemCount: categoryMeals.length,
